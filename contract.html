@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Webpixels">
+    <title>X-aegis-contract</title>
+    <!-- Preloader -->
+    <style>
+        @keyframes hidePreloader {
+            0% {
+                width: 100%;
+                height: 100%;
+            }
+
+            100% {
+                width: 0;
+                height: 0;
+            }
+        }
+
+        body>div.preloader {
+            position: fixed;
+            background: white;
+            width: 100%;
+            height: 100%;
+            z-index: 1071;
+            opacity: 0;
+            transition: opacity .5s ease;
+            overflow: hidden;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body:not(.loaded)>div.preloader {
+            opacity: 1;
+        }
+
+        body:not(.loaded) {
+            overflow: hidden;
+        }
+
+        body.loaded>div.preloader {
+            animation: hidePreloader .5s linear .5s forwards;
+        }
+    </style>
+    <script>
+        window.addEventListener("load", function() {
+            setTimeout(function() {
+                document.querySelector('body').classList.add('loaded');
+            }, 300);
+        });
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+    <!-- <link rel="stylesheet" href="assets/libs/@fortawesome/fontawesome-free/css/all.min.css"> -->
+    <!-- Quick CSS -->
+    <link rel="stylesheet" href="assets/css/quick-website.css" id="stylesheet">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/Logo1.png" id="navbar-logo">
+            </a>
+        </div>
+    </nav>
+    <!-- Main content -->
+    <!-- background-image: url(assets/img/svg/bg_02.svg);background-repeat: no-repeat; background-size: 100%; -->
+    <section>
+		  <img style="max-width: 100%;" src="assets/Banner1.jpg" >
+	  </section>
+    <section class="slice slice-lg pt-lg-6 pb-0 pb-lg-6"  style="text-align: center;">
+	    <img src="assets/contract.png" >
+    </section>
+    <section class="slice pt-0">
+    <div class="container position-relative zindex-100">
+        </div>
+    </section>
+    <footer class="position-relative" id="footer-main">
+        <div class="footer pt-lg-7 footer-dark bg-dark" style="padding-bottom: 3rem;">
+            <!-- SVG shape -->
+            <!-- <div class="shape-container shape-line shape-position-top shape-orientation-inverse">
+                <svg width="2560px" height="100px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 2560 100" style="enable-background:new 0 0 2560 100;" xml:space="preserve" class=" fill-section-secondary">
+                    <polygon points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+            </div> -->
+            <!-- Footer -->
+            <div class="container pt-4">
+                <!-- <hr class="divider divider-fade divider-dark my-4"> -->
+                <div class="row justify-content-center">
+                    <div class="col-md-10 mb-5 mb-lg-0">
+                        <!-- Theme's logo -->
+                        <div style="text-align: center;">
+                            <a href="index.html">
+                                <img alt="Image placeholder" src="assets/Logo2.png" id="footer-logo" style="width: 200px;">
+                            </a>
+                            <p class="mt-4 text-sm opacity-8 pr-lg-4">MAKE YOU A BETTER BLOCKCHAIN WORLD</p>
+                        </div>
+                        <!-- Webpixels' mission -->
+                        <!-- <p class="mt-4 text-sm opacity-8 pr-lg-4"></p> -->
+                        <!-- Social -->
+                        <!-- <ul class="nav mt-4">
+                            <li class="nav-item">
+                                <a class="nav-link pl-0" href="" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" target="_blank">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                        </ul> -->
+                    </div>
+                </div>
+                <!-- <hr class="divider divider-fade divider-dark my-4"> -->
+                <div class="row align-items-center justify-content-md-between pb-4">
+                    <div class="col-md-6">
+                        <div class="copyright text-sm font-weight-bold text-center text-md-left">
+                            <!-- Copyright &copy; 2017 ~ 2021 LT Capital -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Core JS  -->
+    <!-- <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/svg-injector/dist/svg-injector.min.js"></script>
+    <script src="assets/libs/feather-icons/dist/feather.min.js"></script> -->
+    <!-- Quick JS -->
+    <script src="assets/js/quick-website.js"></script>
+    <!-- Feather Icons -->
+    <script>
+        feather.replace({
+            'width': '1em',
+            'height': '1em'
+        })
+    </script>
+<style>
+.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+</style>
+</body>
+
+</html>
